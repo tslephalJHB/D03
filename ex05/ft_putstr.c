@@ -13,13 +13,9 @@
 void    ft_putchar(char *c);
 
 void	ft_putstr(char *str){
-    int count;
-    char *ptr;
-    count = 0;
     
-    while(count < strlen(str)){
-        ptr = (str + count);
-        ft_putchar(ptr);
-        count ++;
+    while(*str){
+        ft_putchar(str);
+        str++;
     }
 }
