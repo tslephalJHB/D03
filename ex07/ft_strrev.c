@@ -12,25 +12,26 @@
 
 #include <unistd.h>
 
-char    *ft_strrev(char *str){
-    int count_1; 
+char    *ft_strrev(char *str)
+{
+    	int count_1; 
    	int count_2;
 	int length;
 
-    length = 0;
-    while(str[length] != '\0')
+    	length = 0;
+    	while(str[length] != '\0')
 	{
-        length++;
+        	length++;
 	}
-    length--;
+    	length--;
 	count_1 = 0;
-    while (count_1 < length)
+    	while (count_1 < length)
 	{
-        count_2 = str[count_1];
-        str[count_1] = str[length];
-        str[length] = count_2;
-        length--;
-        count_1++;
-    }
+        	count_2 = str[count_1];
+        	str[count_1] = str[length];
+        	str[length] = count_2;
+        	length--;
+        	count_1++;
+    	}
 	return(str);
 }
