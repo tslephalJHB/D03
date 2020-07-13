@@ -10,12 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_strlen(char *str){
+int     ft_strlen(char *str)
+{
     int length;
     
     length = 0;
-    
-    while(*str){
+    while(*str)
+    {
         length++;
         str++;
     }
